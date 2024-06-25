@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Button with Image Links</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f0f0f0;
+        }
+        .button-container {
+            display: flex;
+            gap: 20px;
+        }
+        .button-with-image {
+            position: relative;
+            display: inline-block;
+            text-align: center;
+            color: white;
+            font-size: 16px;
+            border: none;
+            cursor: pointer;
+            padding: 0;
+            text-decoration: none;
+        }
+        .button-with-image img {
+            display: block;
+            width: 150px;
+            height: 150px;
+        }
+        .button-with-image span {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+    </style>
+</head>
+<body>
+    <div class="button-container">
+        <a href="https://talha-07-live.github.io/Talha_App_Cricket/" class="button-with-image">
+            <img src="https://s10.gifyu.com/images/SYGkR.jpg" alt="Button 1 Image">
+            <span>Cricket World Cup Live</span>
+        </a>
+        <a href="https://talha-07-live.github.io/Talha-s_App_Football_1/" class="button-with-image">
+            <img src="https://s10.gifyu.com/images/SYGkR.jpg" alt="Button 2 Image">
+            <span>Copa America Live</span>
+        </a>
+        <a href="https://talha-07-live.github.io/Talha-s_App_Football_2/" class="button-with-image">
+            <img src="https://s10.gifyu.com/images/SYGkR.jpg" alt="Button 3 Image">
+            <span>UEFA EURO Cup Live</span>
+        </a>
+    </div>
+</body>
+</html>
