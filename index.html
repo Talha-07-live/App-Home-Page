@@ -14,45 +14,55 @@
         }
         .button-container {
             display: flex;
+            flex-direction: column;
             gap: 20px;
         }
         .button-with-image {
-            position: relative;
             display: inline-block;
             text-align: center;
-            color: white;
+            color: #333; /* Adjust text color */
             font-size: 16px;
-            border: none;
-            cursor: pointer;
-            padding: 0;
             text-decoration: none;
+            position: relative;
+            overflow: hidden;
+            border-radius: 30px; /* Rounded corners */
+            background-color: rgba(255, 255, 255, 0.8); /* Light rounded background color */
+            transition: background-color 0.3s ease;
+            width: 200px; /* Adjust button width */
+            height: 200px; /* Adjust button height */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+        }
+        .button-with-image:hover {
+            background-color: rgba(255, 255, 255, 1); /* Darken background color on hover */
         }
         .button-with-image img {
             display: block;
-            width: 150px;
-            height: 150px;
+            width: 100%;
+            height: auto;
+            border-radius: 30px; /* Match button radius */
         }
         .button-with-image span {
             position: absolute;
             top: 50%;
             left: 50%;
             transform: translate(-50%, -50%);
+            z-index: 1;
         }
     </style>
 </head>
 <body>
     <div class="button-container">
-        <a href="https://talha-07-live.github.io/Talha_App_Cricket/" class="button-with-image">
-            <img src="https://s10.gifyu.com/images/SYGkR.jpg" alt="Button 1 Image">
-            <span>Cricket World Cup Live</span>
+        <a href="https://link1.example.com" class="button-with-image">
+            <img src="image1.jpg" alt="Button 1 Image">
+            <span>Button 1</span>
         </a>
-        <a href="https://talha-07-live.github.io/Talha-s_App_Football_1/" class="button-with-image">
-            <img src="https://s10.gifyu.com/images/SYGkR.jpg" alt="Button 2 Image">
-            <span>Copa America Live</span>
+        <a href="https://link2.example.com" class="button-with-image">
+            <img src="image2.jpg" alt="Button 2 Image">
+            <span>Button 2</span>
         </a>
-        <a href="https://talha-07-live.github.io/Talha-s_App_Football_2/" class="button-with-image">
-            <img src="https://s10.gifyu.com/images/SYGkR.jpg" alt="Button 3 Image">
-            <span>UEFA EURO Cup Live</span>
+        <a href="https://link3.example.com" class="button-with-image">
+            <img src="image3.jpg" alt="Button 3 Image">
+            <span>Button 3</span>
         </a>
     </div>
 </body>
